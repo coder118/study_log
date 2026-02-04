@@ -6,7 +6,7 @@
 # rebase의 기초
 
 
-![alt text](basic-rebase-1.png)
+![alt text](./git_images/basic-rebase-1.png)
 
 > 그림 1
 
@@ -15,7 +15,7 @@
 만약 merge를 사용해서 병합하면 어떻게 될까?
 브랜치의 마지막 커밋 2개(c3,c4)와 공통 조상(c2)를 사용하는 3-way Merge로 새로운 커밋을 만들어낸다.
 
-![alt text](basic-rebase-2.png)
+![alt text](./git_images/basic-rebase-2.png)
 
 ----
 
@@ -26,7 +26,7 @@ rebase로도 가능하다.
 
 위 명령어를 입력하면 아래 그림처럼 된다.
 
-![alt text](basic-rebase-3.png)
+![alt text](./git_images/basic-rebase-3.png)
 
 > 그림 2
 
@@ -48,7 +48,7 @@ merge와 다르게 한줄로 정돈된다.
 
 master 브랜치를 Fast-forward 시킨다.
 
-![alt text](basic-rebase-4.png)
+![alt text](./git_images/basic-rebase-4.png)
 
 
 ### 중요한 부분!
@@ -79,7 +79,7 @@ merge는 두 브랜치의 최종 결과만을 가지고 합친다.
 ## rebase 활용
 
 
-![alt text](interesting-rebase-1.png)
+![alt text](./git_images/interesting-rebase-1.png)
 
 > 그림 3
 
@@ -102,7 +102,7 @@ server 와는 아무 관련이 없는 client 커밋은 C8, C9이다. 이 커밋�
 client 브랜치에서만 변경된 패치를 만들어 master 브랜치에서 client 브랜치를 기반으로 새로 만들어 적용한다.
 
 
-![alt text](interesting-rebase-2.png)
+![alt text](./git_images/interesting-rebase-2.png)
 
 
 
@@ -115,7 +115,7 @@ client 브랜치에서만 변경된 패치를 만들어 master 브랜치에서 c
 위 명령어를 사용하면 아래 그림이 만들어진다.
 
 
-![alt text](interesting-rebase-3.png)
+![alt text](./git_images/interesting-rebase-3.png)
 
 
 --------
@@ -128,7 +128,7 @@ client 브랜치에서만 변경된 패치를 만들어 master 브랜치에서 c
 
 라는 명령으로 Checkout 하지 않고 바로 server 브랜치를 master 브랜치로 Rebase 할 수 있다
 
-![alt text](interesting-rebase-4.png)
+![alt text](./git_images/interesting-rebase-4.png)
 
 
 위의 그림 처럼 만들어진다.
@@ -141,7 +141,7 @@ client 브랜치에서만 변경된 패치를 만들어 master 브랜치에서 c
     $ git branch -d server
 
 
-![alt text](interesting-rebase-5.png)
+![alt text](./git_images/interesting-rebase-5.png)
 
 
 이런 커밋 히스토리가 최종적으로 완성된다.
