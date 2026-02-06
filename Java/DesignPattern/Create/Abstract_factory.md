@@ -6,6 +6,38 @@
 
 필요한 객체정보가 각각 다를때 직접 필요한 클래스로 접근하는 것이 아니라 인터페이스를 통해 필요한 클래스에게 접근 할 수 있도록 한다. 클라이언트에서 직접 생성자를 만들지 않고 생성자를 만들어주는 팩토리의 메서드를 실행시킨다.
 
+### ==>(보충 설명)
+
+추상 팩토리의 핵심은 **관련있는 객체들의 집합**(제품군)을 생성하며 구체 클래스에 의존하지 않고 생성하기 위한 패턴이다.  
+
+
+## 구체 클래스(concrete Class)
+
+우리가 자바에서 흔히 사용하는 new로 직접 생성 가능한 실제 구현 클래스를 말한다.
+
+    GamingChair chair = new GamingChair();//이런 식
+
+> 그럼 구체 클래스에 의존한다는 건?
+
+위와 같이 선언을 하고 sofa라는 클래스로 바꾸고 싶으면 new 전부를 수정해야 한다. 즉, 변경에 취약(=확장성이 낮다.)
+
+그래서 구현체 이름을 코드에서 제거하는 것이다. 
+
+아래 그림을 보면 이해가 빠르다.
+
+    FurnitureFactory factory = new FurnitureFactory();
+
+    Chair chair;
+    chair = factory.createChair();
+
+
+Chair라는 클래스를 직접 생성하지 않는다. 
+즉, 클라이언트는 "의자"라는 개념만 알고 있고 이 의자가 게이밍의자인지, 소파인지를 알 필요가 없다. 
+
+착각할 수 있는 부분은 구체 클래스를 사용하지 말라는 것이 아니다. 무조건적으로 있어야 한다. 하지만 딱 한 곳에서만 사용되게 만들어 둔 것이다. 
+
+위의 코드에선 FurnitureFactory 내부에 구현 클래스가 하나있을 것이다.
+
 ### 언제? 왜? 사용하는가?
 
 1. 플랫폼, os별 UI컴포넌트에 사용할 수 있다.
@@ -50,4 +82,4 @@ MacFactory와 WindowFactory 클래스를 만들고 item을 implements받는다. 
                                             Client
 
 
-
+[추상 팩토리 구현 코드](https://refactoring.guru/ko/design-patterns/abstract-factory/java/example#example-0)
