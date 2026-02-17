@@ -41,7 +41,7 @@ Spring 에서는 1번. 생성자 주입을 권장한다. (Setter 주입의 경�
 
 
 
-![ioc 분류 이미지](img1.daumcdn.png)
+![ioc 분류 이미지](/Spring/Spring_images/img1.daumcdn.png)
 
 
 
@@ -85,7 +85,7 @@ BeanFactory에 여러가지 컨테이너 기능을 추가한 것이다.
         - 리스너로 등록된 빈에게 이벤트 발생을 알려준다.
 
 
-![ApplicationContext와 beanfactory의 구조](img1.daumcdn-1.png)
+![ApplicationContext와 beanfactory의 구조](/Spring/Spring_images/img1.daumcdn-1.png)
 
 
 ---
