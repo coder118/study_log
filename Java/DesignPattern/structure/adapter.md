@@ -3,7 +3,7 @@
 호환성이 없는 인터페이스 때문에 함께 동작할 수 없는 클래스들을 함께 동작하도록 변환역할을 해주는 패턴.
 
 
-![alt text](img1.daumcdn.png)
+![alt text](/Java/DesignPattern/structure/images_st/img1.daumcdn.png)
 
 
 ## 어댑터 패턴구조
@@ -13,7 +13,7 @@
 
 > 객체 어댑터 (object adapter)
 
-![alt text](img1.daumcdn-1.png)
+![alt text](/Java/DesignPattern/structure/images_st/img1.daumcdn-1.png)
 
 Object Adaptor 방식에선 합성을 이용해 구성한다.
 Adaptee(Service)를 따로 클래스 멤버로 설정하고 위임을 통해 동작을 매치시킨다.
@@ -61,7 +61,7 @@ target인터페이스를 implements받으면 override를 통해 기존 코드의
 
 상속을 이용한 어댑터 패턴이다. 하지만 다중상속이 불가능한 문제로 권장되지 않는다.
 
-![alt text](img1.daumcdn-2.png)
+![alt text](/Java/DesignPattern/structure/images_st/img1.daumcdn-2.png)
 
 
 
