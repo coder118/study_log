@@ -7,7 +7,7 @@
 ------
 
 
-![dto와 entity의 사용 전체 과정](image.png)
+![dto와 entity의 사용 전체 과정](/Spring/Spring_images/image2.png)
 
 
 
