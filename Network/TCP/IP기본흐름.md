@@ -3,7 +3,7 @@
 
 클라이언트와 서버가 가운데에 인터넷을 두고 어떻게 소통하는지 살펴본다.
 
-![alt text](/Network/network_images/Screenshot_20260217_213209_Samsung%20Notes.jpg)
+![서버와 클라이언트간 tcp/ip소통 공부 필기 내용](/Network/network_images/Screenshot_20260217_213209_Samsung%20Notes.jpg)
 
 
 그림으로 그려가며 공부한 내용의 순서를 분홍색 번호로 표시해두었다.
