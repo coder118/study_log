@@ -38,7 +38,7 @@ request시에 서버로 전달한다.
 
 ### 쿠키의 인증 방식
 
-![쿠키 인증 과정](/Network/network_images/img1.daumcdn.png)
+![쿠키 인증 과정](/CS/network_images/img1.daumcdn.png)
 
 1. 브라우저(클라이언트)가 서버에 request함
 2. 서버는 requset에 대한 response를 작성한다. 그리고 클라이언트 측에 저장하고 싶은 정보를 응답 헤더의 Set-Cookie에 담는다.
@@ -74,7 +74,7 @@ Value에는 세션 생성 시간, 마지막 접근 시간 및 User가 저장한 
 
 ### Session 인증 방식
 
-![세션 인증 방식](/Network/network_images/img1.daumcdn-1.png)
+![세션 인증 방식](/CS/network_images/img1.daumcdn-1.png)
 
 1. 유저가 로그인하면 session이 서버 메모리(or DB)에 저장. 이때 Session Id를 기준으로 세션을 식별한다.
 2. 서버에서 브라우저 쿠키에다가 Session Id를 저장
@@ -107,7 +107,7 @@ token은 앱과 서버가 통신 및 인증할때 많이 사용된다. 웹에는
 ### Token 인증 방식
 
 
-![토큰 인증 방식](/Network/network_images/img1.daumcdn-2.png)
+![토큰 인증 방식](/CS/network_images/img1.daumcdn-2.png)
 
 1. 사용자가 로그인 한다.(request)
 2. 서버측에서 사용자(클라이언트)에게 유일한 토큰을 발급한다.(response)
