@@ -9,7 +9,7 @@
 
 5. 개발이 완료되면 바로 push하면 안된다.
 
-6. 다른 팀원이 origin/main에 이미 머지를 해놓았을 수 도 있기 때문에 나는 내 브랜치에서 git pull origin main --rebase를 실행한다. (해당 명령어는 git fetch origin과 git rebase origin/main을 줄여놓은 것이다.)
+6. 다른 팀원이 origin/main에 이미 머지를 해놓았을 수 도 있기 때문에 나는 내 브랜치에서 git pull origin main(무조건 main이 아니니 주의요망!!! 팀별로 사용하고 있는 브랜치가 다를 위험이있다.) --rebase를 실행한다. (해당 명령어는 git fetch origin과 git rebase origin/main을 줄여놓은 것이다.)
 
     6-1. pull이 안되는 경우가 있다. 아마 변경사항이 스테이징에 올라갔지만 커밋되지 않은 상황일 것이다.
 
@@ -47,3 +47,5 @@
 7. 그리고 로컬 main으로 이동해서 내가 origin/main에 머지한 내용을 pull 해서 가져온다.
 
 8. 그리고 내가 작업하던 로컬 브랜치를 삭제하면 될 것이다
+
+[pr 올린거 수정하기](https://mine-it-record.tistory.com/689)
